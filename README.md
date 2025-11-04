@@ -7,28 +7,7 @@ Un programme ui permet de remplir un tableau avec des **entiers positifs uniques
 
 
 ## 🚀 Exemples d'exécution
-🎯 PROGRAMME DE REMPLIR TABLEAU UNIQUE🎯
-
-Entrez la taille du tableau (entre 5 et 10) : 6
-
-🎯 EXEMPLE RÉEL DE TABLEAU REMPLI (n=7)
-Index	Valeur	Validation
-T1[1]	12	✅ Positif et unique
-T1[2]	5	✅ Positif et unique
-T1[3]	18	✅ Positif et unique
-T1[4]	5	❌ Rejeté (déjà présent)
-T1[5]	7	✅ Positif et unique
-T1[6]	-3	❌ Rejeté (négatif)
-T1[7]	9	✅ Positif et unique
-┌───┬───┬───┬───┬───┬───┬───┐
-│ 12│ 5 │ 18│ 7 │ 9 │   │   │
-└───┴───┴───┴───┴───┴───┴───┘
-  ↑   ↑   ↑   ↑   ↑
-  T1[1] à T1[5] valides     
-  📋 CONTRAINTES DU TABLEAU
-Propriété	Règle	Exemple Valide	Exemple Invalide
-Taille (n)	5 ≤ n ≤ 10	n=7 ✅	n=3 ❌
-Valeurs	Entiers positifs	15 ✅	-5 ❌
-Unicité	Aucun doublon	8,15,22 ✅	8,15,8 ❌
-Type	Entiers uniquement	10 ✅	3.14 ❌
+<img width="1695" height="790" alt="Capture d’écran 2025-11-04 202040" src="https://github.com/user-attachments/assets/7e951abd-dadc-49b6-bf7a-156e450d7d29" />
+<img width="1670" height="750" alt="Capture d’écran 2025-11-04 202101" src="https://github.com/user-attachments/assets/8605aea5-62ae-4b20-846c-feea40cabac6" />
+<img width="1636" height="732" alt="Capture d’écran 2025-11-04 202135" src="https://github.com/user-attachments/assets/ec9d0e53-9292-4914-a44f-8f0a8bce2dd5" />
 

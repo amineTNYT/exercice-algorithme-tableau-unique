@@ -1,0 +1,94 @@
+Algorithme TableauUnique
+Début
+saisir(N)
+remplir(t,n)
+affichage(t,n)
+fin
+┌───────────────────────────────────────────────────────────┐
+│                      Nouveaux Types                       │
+├───────────────────────────────────────────────────────────┤                     
+│               Objet              │      Nature / Type     │                               TDOG
+├──────────────────────────────────┼────────────────────────┤                          n            entier
+                                                                                       t            tab
+                                                                           saisir,remplir           procedure
+                                                                           affichage
+procédure saisir(@x:entier)
+début 
+Répéter
+Écrire("Entrez x entre5-10 : ")
+Lire(x)
+Jusqu'à (n ≥ 5) ET (n ≤ 10)
+fin
+
+procédure remplir(@t:tab,n:entier)
+debut
+Pour i de 0 à n-1 Faire
+    Répéter
+    Écrire("T[", i, "] = ")
+    Lire(T[i])
+    jusqu'à t[i]>0 et unique(t,n)
+finpour
+fin                TDOL
+┌──────────────────────────────────┬────────────────────────┐
+│               Objet              │      Nature / Type     │
+├──────────────────────────────────┼────────────────────────┤
+│ i                                │ entier                 │
+└──────────────────────────────────┴────────────────────────┘
+
+
+
+fonction unique(t:tab,n:entier) : booléen
+début
+i=0
+test=vrai 
+répéter
+    si nb-occurance(t,n,i>1) alors
+        i=i+1
+    sinon 
+        test=faux
+    finsi   
+jusqu'à  test=faux ou i≤ n    
+fin                     TDOL
+┌──────────────────────────────────┬────────────────────────┐
+│               Objet              │      Nature / Type     │
+├──────────────────────────────────┼────────────────────────┤
+│ i                                │ entier                 │
+├──────────────────────────────────┼────────────────────────┤
+│ test                             │ booléen                │
+├──────────────────────────────────┼────────────────────────┤
+│ nb-occurance                     │ fonction               │
+└──────────────────────────────────┴────────────────────────┘
+
+
+
+fonction nb-occurance(t:tab,n,x:entier)
+début                                                 
+nb<---0
+pour i de 0 à n-1 faire
+     si t[i]=x alors                                                                                             TDOL
+        nb=nb+1                                                                             ┌──────────────────────────────────┬────────────────────────┐
+    finsi                                                                                   |                                  |                        |
+finpour                                                                                     |                                  |                        | 
+fin                                                                                         │               Objet              │      Nature / Type     │
+                                                                                            ├──────────────────────────────────┼────────────────────────┤
+                                                                                            │ x                                │ entier                 │
+                                                                                            ├──────────────────────────────────┼────────────────────────┤
+                                                                                            │ i                                │ entier                 │                                                                                            ├──────────────────────────────────┼────────────────────────┤
+        
+     
+
+ 
+            
+          
+    
+procédure affichage(t,n)
+    Écrire("Tableau T : ")
+    Pour i de 0 à n-1 Faire
+        Écrire(T[i], " ")
+    FinPour
+Fin
+┌──────────────────────────────────┬────────────────────────┐
+│               Objet              │      Nature / Type     │
+├──────────────────────────────────┼────────────────────────┤
+│ i                                │ entier                 │
+└──────────────────────────────────┴────────────────────────┘

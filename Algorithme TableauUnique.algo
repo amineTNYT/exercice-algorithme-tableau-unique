@@ -8,9 +8,9 @@ fin
 │                      Nouveaux Types                       │
 ├───────────────────────────────────────────────────────────┤                     
 │               Objet              │      Nature / Type     │                               TDOG
-├──────────────────────────────────┼────────────────────────┤                          n            entier
-                                                                                       t            tab
-                                                                           saisir,remplir           procedure
+├──────────────────────────────────┼────────────────────────┤                          n      |      entier
+                                                                                       t      |      tab
+                                                                           saisir,remplir     |     procedure
                                                                            affichage
 procédure saisir(@x:entier)
 début 
@@ -47,7 +47,8 @@ répéter
     sinon 
         test=faux
     finsi   
-jusqu'à  test=faux ou i≤ n    
+jusqu'à  test=faux ou i≤ n  
+retourner test  
 fin                     TDOL
 ┌──────────────────────────────────┬────────────────────────┐
 │               Objet              │      Nature / Type     │
@@ -65,10 +66,11 @@ fonction nb-occurance(t:tab,n,x:entier)
 début                                                 
 nb<---0
 pour i de 0 à n-1 faire
-     si t[i]=x alors                                                                                             TDOL
-        nb=nb+1                                                                             ┌──────────────────────────────────┬────────────────────────┐
-    finsi                                                                                   |                                  |                        |
-finpour                                                                                     |                                  |                        | 
+     si t[i]=x alors                                                                                             
+        nb=nb+1                                                                            
+    finsi                                                                                   
+finpour                                                                                                             TDOL
+retourner x                                                                                 |                                  |                        | 
 fin                                                                                         │               Objet              │      Nature / Type     │
                                                                                             ├──────────────────────────────────┼────────────────────────┤
                                                                                             │ x                                │ entier                 │

@@ -1,6 +1,12 @@
-**PROBLEM
+## 🎯 Énoncé du Problème
 Écrire un programme qui permet de remplir un tableau T1 par n entiers positifs et uniques, avec 5 ≤ n ≤ 10, puis affiche le tableau
-# 📋 Programme - Gestion de Tableaux
+- Remplit un tableau **T1** avec **n** entiers
+- Respecte les contraintes suivantes :
+  - `5 ≤ n ≤ 10` (taille du tableau)
+  - Tous les entiers doivent être **positifs**
+  - Toutes les valeurs doivent être **uniques** (pas de doublons)
+- Affiche le tableau final
+
 
 ## 🎯 Description
 Un programme ui permet de remplir un tableau avec des **entiers positifs uniques** et de l'afficher proprement. Le programme inclut des contrôles de saisie robustes pour garantir l'intégrité des données.

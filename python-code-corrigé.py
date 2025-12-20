@@ -22,7 +22,7 @@ def nb_occurrence(t,n,x):
     return nb
 # Fonction pour afficher les éléments du tableau séparés par "|"
 def affichage(t,n):
-    for i in range(0,n):
+    for i in range(n):
         print(t[i],end="|")
    
   

@@ -3,7 +3,7 @@ from numpy import array
 # Fonction pour saisir et valider la taille du tableau
 def sasir():
     n=int(input("Donner le taille du tableau=:"))
-    while not (3<=n<=5):
+    while not (3 <=n<= 5):
         n=int(input("Donner taille du tableau=:"))
     return n
 

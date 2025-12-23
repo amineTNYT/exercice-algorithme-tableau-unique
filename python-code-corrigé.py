@@ -11,16 +11,19 @@ def sasir():
 def remplir(t, n):
     for i in range(n):
         t[i] = int(input("t[" + str(i) + "] = "))
-        while not (t[i] > 0 and nb_occurrence(t, i+1, t[i]) == 1):
+        while not (t[i] > 0 and unique(t,i) ):
             t[i] = int(input("t[" + str(i) + "] = "))
 
-def nb_occurrence(t,n,x):
-    nb = 0
-    for i in range(n):
-        if t[i] == x:
-            nb += 1
-    return nb
-# Fonction pour afficher les éléments du tableau séparés par "|"
+def unique(t,x):
+    i=0
+    test=False
+    while test==False and i<x:
+        if t[i]==t[x]:
+            test=True
+        else:
+            i=i+1
+    return not(test)
+
 def affichage(t,n):
     for i in range(n):
         print(t[i],end="|")

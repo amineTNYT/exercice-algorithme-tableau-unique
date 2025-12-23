@@ -28,7 +28,7 @@ Pour i de 0 à n-1 Faire
     Lire(T[i])
     jusqu'à t[i]>0 et unique(t,n)
 finpour
-fin                TDOL
+fin                          TDOL
 ┌──────────────────────────────────┬────────────────────────┐
 │               Objet              │      Nature / Type     │
 ├──────────────────────────────────┼────────────────────────┤
@@ -37,46 +37,30 @@ fin                TDOL
 
 
 
-fonction unique(t:tab,n:entier) : booléen
+fonction unique(t:tab,x:entier) : booléen
 début
-i=0
-test=vrai 
+i<---0
+test<---faux 
 répéter
-    si nb-occurance(t,n,i>1) alors
-        i=i+1
+    si t[i]=t[x] alors
+        test=vrai
     sinon 
-        test=faux
+        i<--i+1
     finsi   
-jusqu'à  test=faux ou i≤ n  
+jusqu'à  test=faux ou i< x  
 retourner test  
-fin                     TDOL
+fin                          TDOL
 ┌──────────────────────────────────┬────────────────────────┐
 │               Objet              │      Nature / Type     │
 ├──────────────────────────────────┼────────────────────────┤
-│ i                                │ entier                 │
+│ i   x                            │ entier                 │
 ├──────────────────────────────────┼────────────────────────┤
 │ test                             │ booléen                │
 ├──────────────────────────────────┼────────────────────────┤
-│ nb-occurance                     │ fonction               │
 └──────────────────────────────────┴────────────────────────┘
 
 
 
-fonction nb-occurance(t:tab,n,x:entier)
-début                                                 
-nb<---0
-pour i de 0 à n-1 faire
-     si t[i]=x alors                                                                                             
-        nb=nb+1                                                                            
-    finsi                                                                                   
-finpour                                                                                                             TDOL
-retourner x                                                                                 |                                  |                        | 
-fin                                                                                         │               Objet              │      Nature / Type     │
-                                                                                            ├──────────────────────────────────┼────────────────────────┤
-                                                                                            │ x                                │ entier                 │
-                                                                                            ├──────────────────────────────────┼────────────────────────┤
-                                                                                            │ i                                │ entier                 │                                                                                            ├──────────────────────────────────┼────────────────────────┤
-        
      
 
  
@@ -84,13 +68,15 @@ fin                                                                             
           
     
 procédure affichage(t,n)
+Début
     Écrire("Tableau T : ")
     Pour i de 0 à n-1 Faire
         Écrire(T[i], " ")
     FinPour
-Fin
+Fin                        TDOL
 ┌──────────────────────────────────┬────────────────────────┐
 │               Objet              │      Nature / Type     │
 ├──────────────────────────────────┼────────────────────────┤
 │ i                                │ entier                 │
 └──────────────────────────────────┴────────────────────────┘
+
